@@ -7,6 +7,7 @@ const minifyjs = require("gulp-uglify");
 const optimizeImages = require('gulp-imagemin')
 const rename = require('gulp-rename');
 const sass = require("gulp-sass");
+const staticServer = require('static-server');
 
 gulp.task("scripts", () => {
     gulp.src(['js/**/*.js'])
@@ -42,5 +43,12 @@ gulp.task("build", ['clean'], () => {
 });
 
 gulp.task("default", ["build"], () => {
-    
+    const server = new staticServer({
+        rootPath: '.',
+        port: 3000
+    });
+
+    server.start(() => console.log('Server listening to', server.port));
+
+    gulp.watch("sass/**/*.scss", ["styles"]);
 });
