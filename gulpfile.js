@@ -49,6 +49,4 @@ gulp.task("default", ["build"], () => {
     });
 
     server.start(() => console.log('Server listening to', server.port));
-
-    gulp.watch("sass/**/*.scss", ["styles"]);
 });
