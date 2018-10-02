@@ -1,0 +1,31 @@
+{
+  "name": "gulp-build-example",
+  "version": "1.0.0",
+  "description": "An example of Gulp being used to build a front-end website",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-uglifycss": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobtmurph/gulp-build-example.git"
+  },
+  "author": "Jacob T. Murphy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobtmurph/gulp-build-example/issues"
+  },
+  "homepage": "https://github.com/jacobtmurph/gulp-build-example#readme"
+}
